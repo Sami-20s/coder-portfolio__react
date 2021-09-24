@@ -1,18 +1,16 @@
 nav {
     .nav__wrapper {
+        padding-top: 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .logo {
-            padding-top: 35px;
-        }
         &__navbar {
             display: flex;
             align-items: center;
             ul {
                 display: flex;
                 justify-self: flex-end;
-                li {
+                li a {
                     padding: 65px 16px 29px;
                     background-color: transparent;
                     transition: all 0.3s ease;
@@ -20,9 +18,9 @@ nav {
                     &:hover {
                         background-color: $orange;
                     }
-                    a {
-                        @include par(18px, 300, $white);
-                    }
+                }
+                a {
+                    @include par(18px, 300, $white);
                 }
             }
             .btn {
@@ -32,7 +30,6 @@ nav {
                 border-radius: 10px;
                 background-color: $orange;
                 outline: none;
-                margin-top: 35px;
                 margin-left: 30px;
                 cursor: pointer;
                 transition: all 0.3s ease;

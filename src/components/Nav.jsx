@@ -26,7 +26,9 @@ const Nav = () => {
                             );
                         })}
                     </ul>
-                    <button className="btn">Hire Me!</button>
+                    <a href="#">
+                        <button className="btn">Hire Me!</button>
+                    </a>
                 </div>
             </div>
         </nav>
