@@ -1,0 +1,9 @@
+// colors
+$orange: #ff4900;
+$white: #ffff;
+// mixins
+@mixin par($s, $w, $c) {
+    font-size: $s;
+    font-weight: $w;
+    color: $c;
+}
