@@ -1,16 +1,16 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ name, aboutName, cvUrl }) => {
     return (
         <header className="container">
             <div className="header__wrapper">
-                <h1>Mr. John Weary</h1>
-                <p>A Professional Web Developer and UI/UX Designer.</p>
+                <h1>{name}</h1>
+                <p>{aboutName}</p>
                 <div className="buttons">
-                    <a href="#">
+                    <a href={cvUrl}>
                         <button className="btn btn-first">Download CV</button>
                     </a>
-                    <a href="#">
+                    <a href={cvUrl}>
                         <button className="btn btn-second">My Work</button>
                     </a>
                 </div>
