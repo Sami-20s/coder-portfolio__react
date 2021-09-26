@@ -12,7 +12,9 @@ const Nav = () => {
     return (
         <nav className="container">
             <div className="nav__wrapper ">
-                <Logo className="logo" />
+                <a href="#">
+                    <Logo />
+                </a>
                 <div className="nav__wrapper__navbar">
                     <ul>
                         {liList.map(el => {

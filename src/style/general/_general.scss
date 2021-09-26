@@ -12,6 +12,7 @@ body {
     background-color: black;
     font-family: poppins;
     overflow-x: hidden;
+    color: white;
 }
 ul {
     list-style: none;
@@ -23,4 +24,7 @@ a:visited {
 .container {
     width: 100%;
     padding: 0 172px;
+}
+#fofy {
+    fill: red;
 }

@@ -3,6 +3,7 @@ import "./style/style.scss";
 import Nav from "./components/Nav.jsx";
 import Header from "./components/Header.jsx";
 import About from "./components/About.jsx";
+import Services from "./components/Services";
 
 function App() {
     const name = "Mr. John Weary";
@@ -14,6 +15,7 @@ function App() {
             <Header name={name} aboutName={aboutName} cvUrl={cvUrl} />
             <article>
                 <About />
+                <Services />
             </article>
         </>
     );
