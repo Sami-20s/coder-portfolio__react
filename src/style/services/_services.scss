@@ -16,7 +16,6 @@
         margin-bottom: 60px;
     }
     .skills__wrapper {
-        
         display: grid;
         grid-template-columns: 380px 380px 380px;
         grid-template-rows: 130px 130px;
@@ -27,6 +26,7 @@
             display: flex;
             align-items: center;
             background-color: $lightBlack;
+            border-radius: 10px;
             cursor: pointer;
             transition: all 0.3s ease;
             &:hover {
@@ -102,5 +102,3 @@
         }
     }
 }
-
-
