@@ -7,6 +7,11 @@ const Services = () => {
         let skillsWrapper = document.querySelector(".skills__wrapper");
         skillsWrapper.classList.toggle("open");
         setService(!service);
+        if (service === true) {
+            document.body.style.overflowY = "hidden";
+        } else {
+            document.body.style.overflowY = "scroll";
+        }
     };
     return (
         <section id="services" className="container">

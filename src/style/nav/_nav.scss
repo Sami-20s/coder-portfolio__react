@@ -41,3 +41,26 @@ nav {
         }
     }
 }
+@media (max-width: 1500px) {
+    nav {
+        .nav__wrapper {
+            a {
+                .logo {
+                    width: 180px;
+                }
+            }
+            &__navbar {
+                ul {
+                    li a {
+                        padding: 65px 8px 29px;
+                        font-size: 17px;
+                    }
+                }
+                .btn {
+                    font-size: 17px;
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}

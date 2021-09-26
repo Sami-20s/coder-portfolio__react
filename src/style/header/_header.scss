@@ -4,7 +4,7 @@ header {
         transform: translateY(180px);
         h1 {
             position: relative;
-            @include par(70px, 00, $white);
+            @include par(70px, 700, $white);
             &::after {
                 content: "Hello, I am";
                 display: block;
@@ -78,6 +78,25 @@ header {
         .shape {
             left: 190px;
             top: 80px;
+        }
+    }
+}
+@media (max-width: 1500px) {
+    header {
+        .header__wrapper {
+            h1 {
+                font-size: 60px;
+            }
+            p {
+                font-size: 17px;
+            }
+            .buttons {
+                .btn {
+                    font-size: 20px;
+                    width: 231px;
+                    height: 73px;
+                }
+            }
         }
     }
 }
