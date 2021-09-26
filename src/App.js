@@ -1,9 +1,10 @@
 import React from "react";
 import "./style/style.scss";
-import Nav from "./components/Nav.jsx";
-import Header from "./components/Header.jsx";
-import About from "./components/About.jsx";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
+import About from "./components/About";
 import Services from "./components/Services";
+import Points from "./components/Points";
 
 function App() {
     const name = "Mr. John Weary";
@@ -16,6 +17,7 @@ function App() {
             <article>
                 <About />
                 <Services />
+                <Points />
             </article>
         </>
     );
