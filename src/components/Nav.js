@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "./svg.jsx";
+import { Logo } from "./svg";
 const liList = [
     { id: 1, title: "About Me" },
     { id: 2, title: "Services" },
