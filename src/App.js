@@ -1,11 +1,12 @@
 import React from "react";
 import "./style/style.scss";
-import Nav from "./components/Nav";
-import Header from "./components/Header";
-import About from "./components/About";
-import Services from "./components/Services";
-import Points from "./components/Points";
-import Portfolio from "./components/Portfolio";
+import Nav from "./components/Nav/Nav";
+import Header from "./components/Header/Header";
+import About from "./components/About/About";
+import Services from "./components/Services/Services";
+import Points from "./components/Points/Points";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
     const name = "Mr. John Weary";
@@ -21,6 +22,7 @@ function App() {
                 <Points />
                 <Portfolio />
             </article>
+            <Testimonials />
         </>
     );
 }

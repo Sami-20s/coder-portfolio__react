@@ -1,0 +1,26 @@
+#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    h1 {
+        @include par(40px, 600, $white);
+    }
+    p {
+        @include par(18px, 300, $white);
+        width: 900px;
+    }
+}
+
+@media (max-width: 1500px) {
+    #testimonials {
+        h2 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
