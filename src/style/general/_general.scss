@@ -13,7 +13,19 @@ body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
     color: white;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $orange;
+        border-radius: 20px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $lightBlack;
+    }
 }
+
 ul {
     list-style: none;
 }
