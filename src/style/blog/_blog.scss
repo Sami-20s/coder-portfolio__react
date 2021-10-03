@@ -1,0 +1,92 @@
+#blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0 50px;
+    h2 {
+        @include par(40px, 600, $white);
+        margin-bottom: 20px;
+    }
+    p {
+        @include par(18px, 300, $white);
+        width: 900px;
+        margin-bottom: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .blog__boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        gap: 50px;
+        margin-bottom: 60px;
+        &__box {
+            background-color: $lightBlack;
+            cursor: pointer;
+            transform: scale(1);
+            transition: all 0.3s ease;
+            border-radius: 0 0 10px 10px;
+            &:hover {
+                transform: scale(1.05);
+            }
+            img {
+                width: 100%;
+            }
+            &__text {
+                padding: 20px 0 30px 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                text-align: left;
+                h4 {
+                    @include par(18px, 400, $white);
+                    margin-bottom: 5px;
+                }
+                h3 {
+                    @include par(22px, 300, $white);
+                    margin-bottom: 20px;
+                    width: 340px;
+                }
+                &__btn {
+                    display: flex;
+                    align-items: center;
+                    #arrow {
+                        fill: $white;
+                    }
+                    h6 {
+                        @include par(16px, 400, $white);
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .btn {
+        position: relative;
+        width: 241px;
+        height: 83px;
+        border: solid 1px $orange;
+        border-radius: 15px;
+        background-color: $orange;
+        @include par(22px, 400, $white);
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: transparent;
+            color: $orange;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    #blog {
+        h2 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
