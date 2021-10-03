@@ -7,6 +7,7 @@ import Services from "./components/Services/Services";
 import Points from "./components/Points/Points";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Testimonials from "./components/Testimonials/Testimonials";
+import HireMe from "./components/HireMe/HireMe";
 
 function App() {
     const name = "Mr. John Weary";
@@ -16,13 +17,12 @@ function App() {
         <>
             <Nav />
             <Header name={name} aboutName={aboutName} cvUrl={cvUrl} />
-            <article>
-                <About />
-                <Services />
-                <Points />
-                <Portfolio />
-            </article>
+            <About />
+            <Services />
+            <Points />
+            <Portfolio />
             <Testimonials />
+            <HireMe />
         </>
     );
 }
