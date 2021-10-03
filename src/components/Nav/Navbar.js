@@ -3,7 +3,6 @@ import React from "react";
 const Navbar = ({ navList, children }) => {
     return (
         <>
-            {" "}
             <div className="nav__wrapper__navbar">
                 <ul>
                     {navList.map(({ id, title }) => {
