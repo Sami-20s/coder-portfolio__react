@@ -15,7 +15,7 @@
             @include par(18px, 300, $white);
             width: 525px;
             line-height: 1.7;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         &__links {
             display: flex;
@@ -68,6 +68,7 @@
                 padding-left: 144px;
                 border: solid 2px $orange;
                 border-radius: 0 15px 15px 0;
+                margin-top: 20px;
                 & > *:not(:last-child) {
                     margin-right: 35px;
                 }
