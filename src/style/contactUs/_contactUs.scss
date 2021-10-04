@@ -1,0 +1,192 @@
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 140px;
+    height: 100vh;
+    .contact__text {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            @include par(40px, 600, $white);
+            margin-bottom: 5px;
+        }
+        p {
+            @include par(18px, 300, $white);
+            width: 525px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        &__links {
+            display: flex;
+            flex-direction: column;
+            &__link {
+                display: flex;
+                align-items: center;
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                }
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    padding: 9px;
+                    margin-right: 25px;
+                    border: solid 2px #333333;
+                    border-radius: 100%;
+                    color: $white;
+                    cursor: pointer;
+                    cursor: pointer;
+                    transform: scale(1);
+                    transition: all 0.3s ease;
+                    &:hover {
+                        color: $orange;
+                        border-color: $orange;
+                        transform: scale(1.05);
+                    }
+                }
+                &__info {
+                    display: flex;
+                    flex-direction: column;
+                    h3 {
+                        @include par(18px, 300, #6b6b6b);
+                    }
+                    h4 {
+                        @include par(25px, 300, $white);
+                        width: 316px;
+                    }
+                }
+            }
+            &__socialIcons {
+                transform: translateX(-142px);
+                font-size: 44px;
+                width: calc(100% + 100px);
+                height: 73px;
+                background-color: $orange;
+                display: flex;
+                align-items: center;
+                padding-left: 144px;
+                border: solid 2px $orange;
+                border-radius: 0 15px 15px 0;
+                & > *:not(:last-child) {
+                    margin-right: 35px;
+                }
+                & > * {
+                    cursor: pointer;
+                    transform: scale(1) rotate(0);
+                    transition: all 0.5s ease;
+                    &:hover {
+                        transform: scale(1.2) rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            @include par(40px, 600, $white);
+            margin-bottom: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            .form__top {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 30px;
+                margin-bottom: 30px;
+                input {
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    /* Firefox */
+                    &[type="number"] {
+                        -moz-appearance: textfield;
+                    }
+                    display: block;
+                    position: relative;
+                    width: 300px;
+                    height: 60px;
+                    padding: 30px 25px;
+                    color: #707070;
+                    background-color: transparent;
+                    border: solid 1px #333333;
+                    outline: none;
+                    transform: all 1s ease;
+                    @include par(16px, 400, #707070);
+
+                    &:focus {
+                        border-color: #164379;
+                    }
+                }
+                #select {
+                    display: block;
+                    position: relative;
+                    width: 300px;
+                    height: 60px;
+                    padding: 0 21px;
+                    color: #707070;
+                    background-color: transparent;
+                    border: solid 1px #333333;
+                    outline: none;
+                    @include par(16px, 400, #707070);
+                }
+            }
+            #textBox {
+                display: block;
+                position: relative;
+                resize: none;
+                width: 100%;
+                padding: 20px 21px;
+                color: #707070;
+                background-color: transparent;
+                border: solid 1px #333333;
+                outline: none;
+                transform: all 1s ease;
+                @include par(16px, 400, #707070);
+                &:focus {
+                    border-color: #164379;
+                }
+                margin-bottom: 40px;
+            }
+            .btn {
+                position: relative;
+                width: 200px;
+                height: 73px;
+                border: solid 1px $orange;
+                border-radius: 15px;
+                background-color: $orange;
+                @include par(22px, 400, $white);
+                outline: none;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: transparent;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    #contact {
+        .contact__text {
+            h2 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 15px;
+                width: 450px;
+            }
+        }
+    }
+}

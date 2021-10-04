@@ -9,6 +9,7 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Testimonials from "./components/Testimonials/Testimonials";
 import HireMe from "./components/HireMe/HireMe";
 import Blog from "./components/Blog/Blog";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
     const name = "Mr. John Weary";
@@ -25,6 +26,7 @@ function App() {
             <Testimonials />
             <HireMe />
             <Blog />
+            <ContactUs />
         </>
     );
 }
