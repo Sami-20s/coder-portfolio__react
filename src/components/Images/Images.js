@@ -16,7 +16,6 @@ const Images = () => {
                     return <SingleImage key={item.id} {...item} />;
                 })}
             </div>
-            <button className="goToTop"></button>
         </article>
     );
 };
