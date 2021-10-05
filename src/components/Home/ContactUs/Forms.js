@@ -10,7 +10,7 @@ const Forms = () => {
                     <input type="email" id="email" placeholder="Email" />
                     <input type="number" id="number" placeholder="Phone#" />
                     <select id="select">
-                        <option selected>Budget</option>
+                        <option>Budget</option>
                         <option>Cash</option>
                         <option>Bank</option>
                     </select>

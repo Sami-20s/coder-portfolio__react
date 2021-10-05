@@ -7,7 +7,7 @@ const Points = () => {
             <section id="points">
                 <div className="points__wrapper container">
                     {pointsList.map(item => (
-                        <PointsItems {...item} />
+                        <PointsItems {...item} key={item.id} />
                     ))}
                 </div>
             </section>

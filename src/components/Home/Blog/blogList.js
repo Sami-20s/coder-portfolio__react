@@ -12,7 +12,7 @@ export const blogList = [
         img: "./img/blog-2.png",
     },
     {
-        id: 1,
+        id: 3,
         date: "26th October,2019",
         text: "I Used The Web For A Day On A 50 MB Budget",
         img: "./img/blog-3.png",
