@@ -1,5 +1,25 @@
 header {
+    position: relative;
     height: calc(100vh - 121px);
+    .goToBottom {
+        display: grid;
+        position: absolute;
+        height: 70px;
+        width: 50px;
+        left: 50%;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px $orange;
+        border-radius: 50px;
+        color: $orange;
+        font-size: 45px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            height: 80px;
+        }
+    }
     .header__wrapper {
         transform: translateY(180px);
         h1 {

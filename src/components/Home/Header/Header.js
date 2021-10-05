@@ -1,6 +1,8 @@
 import React from "react";
 import Buttons from "./Buttons";
 import Images from "./Images";
+import { BsArrowDown } from "react-icons/bs";
+// BsArrowDown , BsArrowUp
 
 const Header = ({ name, aboutName, cvUrl }) => {
     return (
@@ -11,6 +13,9 @@ const Header = ({ name, aboutName, cvUrl }) => {
                 <Buttons cvUrl={cvUrl} />
             </div>
             <Images />
+            <a href="#about" className="goToBottom">
+                <BsArrowDown />
+            </a>
         </header>
     );
 };
