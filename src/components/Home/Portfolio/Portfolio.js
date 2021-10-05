@@ -4,6 +4,8 @@ import { Arrow, portfolioImgList, portfolioList } from "./portfolioList";
 import Categories from "./Categories";
 import Images from "./Images";
 import Buttons from "./Buttons";
+import { Link } from "react-router-dom";
+
 const Portfolio = () => {
     const [images, setImages] = useState(portfolioImgList);
     const categorieFilter = (e, catego) => {
@@ -30,7 +32,9 @@ const Portfolio = () => {
             <Images images={images}>
                 <Arrow />
             </Images>
-            <Buttons />
+            <Link to="/images">
+                <Buttons />
+            </Link>
         </section>
     );
 };
